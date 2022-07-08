@@ -39,7 +39,7 @@ export default function Cover() {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: true, 
               mode: "push",
             },
             onHover: {
@@ -60,10 +60,10 @@ export default function Cover() {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#0000",
           },
           links: {
-            color: "#ffffff",
+            color: "#0000",
             distance: 100,
             enable: true,
             opacity: 0.5,
@@ -106,7 +106,7 @@ export default function Cover() {
      <Container  sx={{display:'flex', alignItems:'center',justifyContent:"space-between",flexDirection:{md:'row', xs:"column-reverse"},}}>
         <Box sx={{mx:2, my:5, zIndex:2, color:'#ffff'}}>
             <Typography variant='h5' component='div' fontWeight='750'>
-                Welcome to my Protfolio
+                Welcome to my Protfolio!
             </Typography>
             <Typography fontWeight='750' variant='h4' component='div' ><span style={{color:'#e94e00'}}>Hi! I'm Masud Rana</span> <br /> DBA Adminstrator & Consultant</Typography>
             <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit et voluptas quidem? Sapiente adipisci vero iure, ipsa facere, tempora molestias earum ad deleniti nulla cumque error deserunt nam. Odit dolor ipsum fuga, nobis eum quisquam dolorem perferendis tenetur amet reprehenderit recusandae impedit earum labore nesciunt non quas voluptatum perspiciatis.</Typography>
