@@ -1,0 +1,12 @@
+.navbar{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top:2em;
+}
+
+.navbar button{
+    font-size: .9em;
+    font-weight:700;
+    margin: .3em;
+}
