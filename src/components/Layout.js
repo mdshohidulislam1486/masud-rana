@@ -34,9 +34,9 @@ const classes = useStyles()
         </Box>
         
 
-        <Container className={classes.main}>
+        <Box className={classes.main}>
             {children}
-        </Container>
+        </Box>
         <footer>
             <Typography className={classes.footer}>All rights reserved</Typography>
         </footer>
