@@ -60,10 +60,10 @@ export default function Cover() {
         },
         particles: {
           color: {
-            value: "#0000",
+            value: "e94e00",
           },
           links: {
-            color: "#0000",
+            color: "e94e00",
             distance: 100,
             enable: true,
             opacity: 0.5,

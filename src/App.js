@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home';
 
 function App() {
   return (
-   <Box>
+   <Box className='myApp'>
       <Home></Home>
    </Box>
   );
