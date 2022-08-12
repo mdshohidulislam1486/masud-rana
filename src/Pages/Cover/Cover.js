@@ -1,5 +1,5 @@
 import { Box, Button, Container, Typography } from '@mui/material';
-import React from 'react';
+import React, { useCallback } from 'react';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import proPic from '../../Images/propic.png';
 import './Cover.css';
@@ -7,18 +7,18 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
 export default function Cover() {
-  const particlesInit = async (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(main);
-  };
+    await loadFull(engine);
+  }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
   return (
     <>
       <Box className="cover-page">
@@ -56,10 +56,10 @@ export default function Cover() {
             },
             particles: {
               color: {
-                value: '#e94e00',
+                value: '#fff',
               },
               links: {
-                color: '#e94e00',
+                color: '#fff',
                 distance: 100,
                 enable: true,
                 opacity: 0.5,
@@ -75,7 +75,7 @@ export default function Cover() {
                   default: 'bounce',
                 },
                 random: true,
-                speed: 5,
+                speed: 2,
                 straight: true,
               },
               number: {
@@ -131,7 +131,16 @@ export default function Cover() {
                 cursor: 'pointer',
               }}
             >
-              <Typography >Let's get Connect </Typography> < ArrowCircleRightIcon className="lets-connect"/>
+              <Typography className="connect-text">
+                <a
+                  href="https://www.linkedin.com/in/masud-rana-8a2174245/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Let's get Connect
+                </a>{' '}
+              </Typography>{' '}
+              <ArrowCircleRightIcon className="lets-connect" />
             </Box>
           </Box>
           <Box

@@ -1,0 +1,85 @@
+.set-meeting{
+    box-sizing:border-box;
+    background-color:aliceblue;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 3em;
+    .set-meeting-title{
+        font-size:1.5em;
+        margin-bottom: 1em;
+        font-weight:bolder;  
+    }
+
+    .set-meeting-content{
+        margin-bottom: 2em;
+    }
+
+    .set-meeting-btn{
+        background-color:#e94e00a0 ;
+    }
+    .set-meeting-btn:hover{
+        background-color:#e94e00 ;
+    }
+}
+
+
+
+.service-main-grid{
+    .serv-left-grid{
+        display: flex;
+        align-items: center;
+        background-image: url('../../Images/services/db-1.jpg');
+        min-width:50%;
+        background-size: cover;
+        object-fit: contain;
+        border-radius:5px;
+        background-repeat: no-repeat;
+        background-blend-mode: color;
+        .serv-left-grid-content{
+            .left-title{
+                color: rgba(255, 255, 255, .9);
+                font-size: 1.5em;
+                font-weight: 900;
+                margin-bottom: 1.5em;
+            }
+            .left-content{
+                color: rgba(255, 255, 255, .9);
+                margin-bottom: 2em;
+            }
+            .set-meeting-btn{
+                background-color:#e94e00a0 ;
+            }
+            .set-meeting-btn:hover{
+                background-color:#e94e00 ;
+            }
+    }
+    }
+    .serv-rigth-grid{
+        .custom-card{
+            text-align: center;
+            padding:1em .5em;
+            border-radius: 10px;
+            box-shadow: 5px 10px 15px 0px rgba(255, 255,255,.1 );
+            margin:1em 1.5em;
+            
+            .card-title{
+                margin:.7em 0em;
+                font-size: 1em;
+                font-weight: 700;
+                color:rgba(255,255,255, .7);
+            }
+            .card-content{
+                color:rgba(255,255,255, .3);
+            }
+        }
+    }
+    .card-1{
+        background-color: rgba(71, 51, 51, 0.5);
+    }
+    .card-2{
+        background-color: rgb(11, 15, 38);
+    }
+    .card-3{
+        background-color: rgba(1, 19, 4, 0.84);
+    }
+}
