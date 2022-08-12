@@ -5,8 +5,10 @@ import proPic from '../../Images/propic.png';
 import './Cover.css';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import AOS from 'aos';
 
 export default function Cover() {
+  AOS.init();
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -107,14 +109,32 @@ export default function Cover() {
           }}
         >
           <Box sx={{ mx: 2, my: 5, zIndex: 2, color: '#ffff' }}>
-            <Typography variant="h5" component="div" fontWeight="750">
+            <Typography
+              variant="h5"
+              component="div"
+              fontWeight="750"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               Welcome to my Protfolio!
             </Typography>
-            <Typography fontWeight="750" variant="h4" component="div">
+            <Typography
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              fontWeight="750"
+              variant="h4"
+              component="div"
+            >
               <span style={{ color: '#e94e00' }}>Hi! I'm Masud Rana</span>{' '}
               <br /> DBA Adminstrator & Consultant
             </Typography>
-            <Typography>
+            <Typography
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Reprehenderit et voluptas quidem? Sapiente adipisci vero iure,
               ipsa facere, tempora molestias earum ad deleniti nulla cumque
@@ -130,6 +150,8 @@ export default function Cover() {
                 my: 3,
                 cursor: 'pointer',
               }}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
             >
               <Typography className="connect-text">
                 <a
@@ -152,6 +174,9 @@ export default function Cover() {
             }}
           >
             <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
               src={proPic}
               alt="myPropic"
               style={{ width: '80%', height: '80%', zIndex: 2 }}

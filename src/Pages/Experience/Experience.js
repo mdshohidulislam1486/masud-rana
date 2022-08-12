@@ -3,10 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './experience.css';
 import './experience.scss';
+import AOS from 'aos';
+
 
 const Experience = () => {
+  AOS.init();
   return (
-    <Box>
+    <Box data-aos="fade-up">
       <Box sx={{ textAlign: 'center', my: 5, pt: 5 }}>
         <Typography variant="h2" className="exp-title">
           Company I have worked with
@@ -25,7 +28,7 @@ const Experience = () => {
           market
         </Typography>
       </Box>
-      <Box className="page-content">
+      <Box className="page-content" data-aos="fade-up">
         <div className="card">
           <div className="content">
             <h2 className="title">Benchmark Software</h2>
