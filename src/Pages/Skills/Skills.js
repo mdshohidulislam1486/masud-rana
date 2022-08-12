@@ -9,6 +9,13 @@ export default function Skills() {
     <Container>
       <Box className="sliderBox">
         <Box className="slider">
+          <Typography
+            variant="h4"
+            component="body"
+            sx={{ color: 'rgba(255, 255, 255, .7)', my: 3 }}
+          >
+            My Expertiese
+          </Typography>
           <Box
             sx={{
               display: 'flex',

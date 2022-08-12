@@ -131,7 +131,7 @@ export default function Cover() {
                 cursor: 'pointer',
               }}
             >
-              <Typography>Let's Connect </Typography> <ArrowCircleRightIcon />
+              <Typography >Let's get Connect </Typography> < ArrowCircleRightIcon className="lets-connect"/>
             </Box>
           </Box>
           <Box

@@ -9,3 +9,11 @@
     width: 100%;
     height: 100%;
 }
+
+.lets-connect{
+    transition: all 2s l;
+}
+.lets-connect:hover{
+    transition: .3s linear;
+    margin-left:.3em;
+}

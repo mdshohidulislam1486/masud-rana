@@ -3,16 +3,24 @@
     min-width: 80%;
     background-image: url('../../Images/data-bg-1.jpg');
     min-height: 250px;
-    background-size: cover;
+    background-size: 100%;
     background-blend-mode: overlay;
     object-fit: cover;
     background-color: #171717;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    transition:background-size 5s linear;
+
  
-   
+    
+}
+
+.slider:hover{
+    
+    background-size: 150%;
 }
 
 .sliderBox{
