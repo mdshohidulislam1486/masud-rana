@@ -1,39 +1,62 @@
 import { Box } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './experience.css';
 import './experience.scss';
 
 const Experience = () => {
   return (
     <Box>
-      <main class="page-content">
+      <Box class="page-content">
         <div class="card">
           <div class="content">
-            <h2 class="title">Mountain View</h2>
+            <h2 class="title">Benchmark Software</h2>
             <p class="copy">
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
+              I have been working with Benchmark Software for more than four
+              years they are an Expert in Microfinance and ERP
             </p>
-            <button class="btn">View Trips</button>
+            <a
+              href="http://www.benchmarksoftwarebd.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="btn">Visit Website</button>
+            </a>
           </div>
         </div>
         <div class="card">
           <div class="content">
             <h2 class="title">Dhaka Airport</h2>
             <p class="copy">
-              Plan your next beach trip with these fabulous destinations
+              I had worked with Shah Jalal International Airport for around two
+              years as a program officer
             </p>
-            <button class="btn">View Trips</button>
+            <a
+              href=" https://shahjalalairport.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="btn">Visit Website</button>
+            </a>
           </div>
         </div>
         <div class="card">
           <div class="content">
-            <h2 class="title">Desert Destinations</h2>
-            <p class="copy">It's the desert you've always dreamed of</p>
-            <button class="btn">Book Now</button>
+            <h2 class="title">Novelta Bestway Pharmaceuticals </h2>
+            <p class="copy">
+              At the beginning of my career, I worked with Novelta as a DBA
+              assistance
+            </p>
+            <a
+              href="https://www.facebook.com/nbplbd"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="btn">Visit Website</button>
+            </a>
           </div>
         </div>
-      </main>
+      </Box>
     </Box>
   );
 };
