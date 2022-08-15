@@ -4,6 +4,7 @@ import React from 'react'
 import useStyles from '../utils/style'
 import './Layout.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import Footer from '../Pages/footer/Footer'
 
 
 
@@ -37,9 +38,7 @@ const classes = useStyles()
         <Box className={classes.main}>
             {children}
         </Box>
-        <footer>
-            <Typography className={classes.footer}>All rights reserved</Typography>
-        </footer>
+       <Footer/>
     </Box>
    
     </>

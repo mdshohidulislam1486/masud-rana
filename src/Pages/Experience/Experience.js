@@ -5,7 +5,6 @@ import './experience.css';
 import './experience.scss';
 import AOS from 'aos';
 
-
 const Experience = () => {
   AOS.init();
   return (

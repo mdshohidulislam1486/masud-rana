@@ -7,14 +7,14 @@ import Services from '../Services/Services';
 import Skills from '../Skills/Skills';
 
 const Home = () => {
-    return (
-       <Layout>
-         <Cover></Cover>
-         <Skills></Skills>
-         <Experience></Experience>
-         <Services></Services>
-       </Layout>
-    );
+  return (
+    <Layout>
+      <Cover></Cover>
+      <Skills></Skills>
+      <Experience></Experience>
+      <Services></Services>
+    </Layout>
+  );
 };
 
 export default Home;
