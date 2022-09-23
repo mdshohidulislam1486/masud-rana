@@ -15,9 +15,8 @@ const Footer = () => {
             <div className="col1">
               <h3 className="heading">Quick Link to Follow</h3>
               <Box sx={{ diplay: 'flex', flexDirection: 'column' }}>
-                <Typography sx={{ mg: 2 }}>
-                  {' '}
-                  <a href=""> Home </a>{' '}
+                <Typography sx={{ mg: 2, cursor: 'pointer' }}>
+                  <Link to="/home">Home</Link>
                 </Typography>
                 <Typography sx={{ mg: 2 }}>
                   {' '}
