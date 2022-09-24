@@ -3,6 +3,17 @@
     justify-content: center;
     align-items: center;
     padding:1em 0em;
+    z-index: 100;
+}
+.navbar-side{
+    padding:1em 0em;
+    z-index: 100;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar-side a {
+    text-decoration: none;
 }
  
 .navbar button{
@@ -11,3 +22,4 @@
     margin: .3em;
     color: #000;
 }
+

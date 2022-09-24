@@ -23,7 +23,7 @@ export default function Cover() {
 
   return (
     <>
-      <Box className="cover-page">
+      <Box className="cover-page" id="cover">
         <Particles
           id="tsparticles"
           init={particlesInit}

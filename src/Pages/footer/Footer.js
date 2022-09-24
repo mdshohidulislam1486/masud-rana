@@ -1,12 +1,24 @@
-import { Box, Container, Link, Typography } from '@mui/material';
-import React from 'react';
+import { Box, Button, Container, Typography } from '@mui/material';
+import React, { useState } from 'react';
 import './footer.css';
 import { IconName } from 'react-icons/io5';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import { HashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const data = new Date();
+  const year = data.getFullYear();
+  const location = useLocation();
+  const [routePath, setRoutePath] = useState(
+    location.pathname === '/contact' ? true : false
+  );
+  const mailtoHref =
+    'mailto:masudrana@example.com?subject=SendMail&body=Description';
+
   return (
     <>
       <footer>
@@ -16,42 +28,58 @@ const Footer = () => {
               <h3 className="heading">Quick Link to Follow</h3>
               <Box sx={{ diplay: 'flex', flexDirection: 'column' }}>
                 <Typography sx={{ mg: 2, cursor: 'pointer' }}>
-                  <Link to="/home">Home</Link>
+                  <HashLink to={routePath ? '/home#cover' : '#cover'} smooth>
+                    Home
+                  </HashLink>
                 </Typography>
                 <Typography sx={{ mg: 2 }}>
-                  {' '}
-                  <a href=""> Experience </a>{' '}
+                  <HashLink
+                    to={routePath ? '/home#experties' : '#experties'}
+                    smooth
+                  >
+                    Experties
+                  </HashLink>
                 </Typography>
                 <Typography sx={{ mg: 2 }}>
-                  {' '}
-                  <a href=""> Services </a>{' '}
+                  <HashLink
+                    to={routePath ? '/home#experience' : '#experience'}
+                    smooth
+                  >
+                    Experiencs
+                  </HashLink>
                 </Typography>
                 <Typography sx={{ mg: 2 }}>
-                  {' '}
-                  <a href=""> Contact </a>{' '}
+                  <HashLink
+                    to={routePath ? '/home#services' : '#services'}
+                    smooth
+                  >
+                    More
+                  </HashLink>
                 </Typography>
                 <Typography sx={{ mg: 2 }}>
-                  {' '}
-                  <a href=""> Resume </a>{' '}
+                  <a href="#"> Resume </a>{' '}
+                </Typography>
+                <Typography sx={{ mg: 2 }}>
+                  <Link to="/contact">Contact me</Link>
                 </Typography>
               </Box>
             </div>
 
             <div className="col2">
-              <h3 className="heading">Language</h3>
+              <h3 className="heading">Technology also I am familiar with</h3>
               <div className="languages">
-                <a href="#">Deutsch</a>
-                <a href="#">English</a>
-                <a href="#">Espaṅol</a>
-                <a href="#">Français</a>
-                <a href="#">Indonesian</a>
-                <a href="#">Italian</a>
-                <a href="#">Nederlands</a>
-                <a href="#">Polnisch</a>
-                <a href="#">Português</a>
-                <a href="#">pyccknṅ</a>
-                <a href="#">Tiéng Viêt</a>
-                <a href="#">Türkçe</a>
+                <a href="#">MYSQL</a>
+                <a href="#">SQL</a>
+                <a href="#">ERP Software</a>
+                <a href="#">Oracle Form</a>
+                <a href="#">PL</a>
+                <a href="#">PHP</a>
+                <a href="#">JavaScript</a>
+                <a href="#">MS Express</a>
+                <a href="#">MS Office</a>
+                <a href="#">Data Base Desigining</a>
+                <a href="#">MVC</a>
+                <a href="#">MongoDB</a>
               </div>
             </div>
 
@@ -61,21 +89,22 @@ const Footer = () => {
                 <a href="#">
                   <FacebookIcon />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/masud-rana-8a2174245/"
+                  target="_blank"
+                >
                   <LinkedInIcon />
                 </a>
-                <a href="masudrana@gmail.com">
+                <Link to="/contact">
                   <AttachEmailIcon />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </Container>
 
         <p className="terms">
-          <a href="#">Terms of purchase</a>
-          <a href="#">Security and privacy</a>
-          <a href="#">Newsletter</a>
+          <a href="#">© All Rights reserved @Masud Rana {year}</a>
         </p>
       </footer>
     </>

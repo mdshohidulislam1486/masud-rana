@@ -11,13 +11,14 @@ import './Services.scss';
 import { SiOracle } from 'react-icons/si';
 import AOS from 'aos';
 
-export default function Services() {
+const Services = () => {
   AOS.init();
   return (
     <>
       <Box
         className="set-meeting"
         sx={{ padding: { lg: '10em 25em', sm: '5em 5em', xs: '2em 2em' } }}
+        id="services"
       >
         <Typography className="set-meeting-title" data-aos="fade-right">
           Lorem ipsum dolor sit amet.
@@ -59,7 +60,7 @@ export default function Services() {
 
           <Grid container className="serv-rigth-grid" item xs={12} sm={6}>
             <Grid item xs={12} md={6}>
-              <Box className="custom-card card-1" data-aos="zoom-in-up">
+              <Box className="custom-card card-4" data-aos="zoom-in-up">
                 <IconButton className="custom-card-icon">
                   <SiOracle />
                 </IconButton>
@@ -105,4 +106,6 @@ export default function Services() {
       </Container>
     </>
   );
-}
+};
+
+export default Services;

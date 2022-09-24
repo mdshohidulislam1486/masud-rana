@@ -8,7 +8,7 @@ import AOS from 'aos';
 const Experience = () => {
   AOS.init();
   return (
-    <Box data-aos="fade-up">
+    <Box data-aos="fade-up experiance-sec-container" id="experience">
       <Box sx={{ textAlign: 'center', my: 5, pt: 5 }}>
         <Typography variant="h2" className="exp-title">
           Company I have worked with
@@ -27,8 +27,8 @@ const Experience = () => {
           market
         </Typography>
       </Box>
-      <Box className="page-content" data-aos="fade-up">
-        <div className="card">
+      <Box className="page-content-1" data-aos="fade-up">
+        <div className="card-1">
           <div className="content">
             <h2 className="title">Benchmark Software</h2>
             <p className="copy">
@@ -44,7 +44,7 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className="card">
+        <div className="card-1">
           <div className="content">
             <h2 className="title">Dhaka Airport</h2>
             <p className="copy">
@@ -60,7 +60,7 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className="card">
+        <div className="card-1">
           <div className="content">
             <h2 className="title">Novelta Bestway Pharmaceuticals </h2>
             <p className="copy">

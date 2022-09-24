@@ -23,8 +23,10 @@ $bp-lg: 800px;
    text-shadow: 3px 1px 10px #000;
 }
 
+.experiance-sec-container{
 
-.page-content {
+}
+.page-content-1 {
   display: grid;
   grid-gap: 2rem;
   padding: 1rem;
@@ -41,7 +43,7 @@ $bp-lg: 800px;
   }
 }
 
-.card {
+.card-1 {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -151,12 +153,12 @@ $bp-lg: 800px;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: rgb(245, 239, 239);
   border: none;
 
   &:hover {
-    background-color: lighten(black, 5%);
+    background-color: lighten(#fff, 5%);
   }
 
   &:focus {
@@ -166,7 +168,7 @@ $bp-lg: 800px;
 }
 
 @media (hover: hover) and (min-width: $bp-md) {
-  .card:after {
+  .card-1:after {
     transform: translateY(0);
   }
 
@@ -180,8 +182,8 @@ $bp-lg: 800px;
     }
   }
 
-  .card:hover,
-  .card:focus-within {
+  .card-1:hover,
+  .card-1:focus-within {
     align-items: center;
 
     &:before {
@@ -202,7 +204,7 @@ $bp-lg: 800px;
     }
   }
 
-  .card:focus-within {
+  .card-1:focus-within {
     &:before,
     &:after,
     .content,

@@ -6,7 +6,7 @@ import ProgressBarProvicer from '../Component/ProgressBarProvicer';
 
 export default function Skills() {
   return (
-    <Container>
+    <Container id="experties">
       <Box className="sliderBox">
         <Box className="slider">
           <Typography
