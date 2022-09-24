@@ -77,7 +77,7 @@ const Footer = () => {
                 <a href="#">JavaScript</a>
                 <a href="#">MS Express</a>
                 <a href="#">MS Office</a>
-                <a href="#">Data Base Desigining</a>
+                <a href="#">Database Designing</a>
                 <a href="#">MVC</a>
                 <a href="#">MongoDB</a>
               </div>

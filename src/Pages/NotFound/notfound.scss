@@ -1,0 +1,26 @@
+
+.not-found-sec{
+    position: relative;
+    .not-found-img{
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: contain;
+        border-radius: 0;
+       
+    }
+   
+}
+.btn-home{
+    z-index: 501;
+    position: absolute;
+    background-image:  linear-gradient(to right, blue , green);;
+    color:#fff;
+    left:50%;
+    border-radius: 5px;
+    top:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

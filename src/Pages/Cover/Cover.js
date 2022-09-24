@@ -1,7 +1,7 @@
 import { Box, Button, Container, Typography } from '@mui/material';
 import React, { useCallback } from 'react';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import proPic from '../../Images/propic.png';
+import proPic from '../../Images/myProfile.png';
 import './Cover.css';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
@@ -179,7 +179,12 @@ export default function Cover() {
               data-aos-duration="1500"
               src={proPic}
               alt="myPropic"
-              style={{ width: '80%', height: '80%', zIndex: 2 }}
+              style={{
+                width: '70%',
+                height: '60%',
+                zIndex: 2,
+                backgroundBlendMode: 'overlay',
+              }}
             />
           </Box>
         </Container>

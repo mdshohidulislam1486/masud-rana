@@ -9,6 +9,7 @@ import Contact from './Pages/contact';
 import Experience from './Pages/Experience/Experience';
 import Services from './Pages/Services/Services';
 import ScrollToTop from './components/scrollToTop';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/Experties" element={<Experience />} />
         <Route path="/about" element={<Services />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
