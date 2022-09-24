@@ -11,6 +11,7 @@ import './Services.scss';
 import { SiOracle } from 'react-icons/si';
 import AOS from 'aos';
 import thinkingPic from '../../Images/thinking.png';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   AOS.init();
@@ -40,13 +41,15 @@ const Services = () => {
           can consult your business to its ultimate goal and convert your
           complex database problem into a simpler one.
         </Typography>
-        <Button
-          className="set-meeting-btn"
-          variant="contained"
-          data-aos="fade-right"
-        >
-          Set up a free meeting
-        </Button>
+        <Link to="/contact" style={{ textDecoration: 'none' }}>
+          <Button
+            className="set-meeting-btn"
+            variant="contained"
+            data-aos="fade-right"
+          >
+            Set up a free meeting
+          </Button>
+        </Link>
       </Box>
 
       <Container sx={{ my: 5, py: 5 }}>
