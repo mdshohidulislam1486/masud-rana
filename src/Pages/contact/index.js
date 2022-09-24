@@ -10,11 +10,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import {
+  Alert,
   Box,
   FormControl,
   InputLabel,
   MenuItem,
   Select,
+  Stack,
   TextField,
 } from '@mui/material';
 
@@ -34,10 +36,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
     e.target.reset();
@@ -102,6 +104,15 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button className="submit-btn">Send</button>
+                <br />
+                <br />
+                <Stack sx={{ width: '100%' }} spacing={2}>
+                  {message && (
+                    <Alert severity="success">
+                      Your message has been forwarded successfully
+                    </Alert>
+                  )}
+                </Stack>
               </form>
             </div>
           </div>

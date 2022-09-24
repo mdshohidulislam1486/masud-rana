@@ -27,19 +27,16 @@ import MailIcon from '@mui/icons-material/Mail';
 export default function Layout({ children }) {
   const classes = useStyles();
   const location = useLocation();
-  console.log(location.pathname);
+
   const [routePath, setRoutePath] = useState(
     location.pathname === '/contact' ? true : false
   );
-
-  console.log(routePath);
 
   // drawer section component
   const [state, setState] = React.useState(false);
 
   const handleSelection = (e) => {
     let { name, value, checked } = e.target;
-    console.log({ name, value, checked });
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
