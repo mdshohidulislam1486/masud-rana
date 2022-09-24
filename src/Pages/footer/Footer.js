@@ -86,7 +86,10 @@ const Footer = () => {
             <div className="col3">
               <h3 className="heading">Get in touch</h3>
               <div className="social">
-                <a href="#">
+                <a
+                  href="https://web.facebook.com/profile.php?id=100076589265865"
+                  target="_blank"
+                >
                   <FacebookIcon />
                 </a>
                 <a

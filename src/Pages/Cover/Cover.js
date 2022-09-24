@@ -135,12 +135,12 @@ export default function Cover() {
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Reprehenderit et voluptas quidem? Sapiente adipisci vero iure,
-              ipsa facere, tempora molestias earum ad deleniti nulla cumque
-              error deserunt nam. Odit dolor ipsum fuga, nobis eum quisquam
-              dolorem perferendis tenetur amet reprehenderit recusandae impedit
-              earum labore nesciunt non quas voluptatum perspiciatis.
+              As an accomplished DBA Administrator, looking forward to working
+              in a competitive environment and deploying my expertise to solve
+              Database problems, utilize long-run database planning, organize
+              and design for a startup or big company and help the company grow.
+              And create a well-ordered maintainable database in the bigger
+              perspective.
             </Typography>
 
             <Box
